@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 0 0% 100%;
+  --fg: 0 0% 7%;
+  --muted: 0 0% 96%;
+  --card: 0 0% 100%;
+  --border: 0 0% 88%;
+  --ring: 0 0% 10%;
+  --primary: 0 0% 10%;
+  --primary-foreground: 0 0% 100%;
+}
+.dark {
+  --bg: 0 0% 5%;
+  --fg: 0 0% 98%;
+  --muted: 0 0% 10%;
+  --card: 0 0% 7%;
+  --border: 0 0% 18%;
+  --ring: 0 0% 85%;
+  --primary: 0 0% 98%;
+  --primary-foreground: 0 0% 7%;
+}
+.heading-bold { @apply font-black tracking-tight; }
+.btn { @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2 text-sm font-medium ring-offset-2 transition; }
+.btn-primary { @apply bg-black text-white dark:bg-white dark:text-black; }
